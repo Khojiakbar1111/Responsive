@@ -279,7 +279,6 @@ main {
   }
 
   .site-header__wrapper {
-    padding: 36px;
     justify-content: space-between;
   }
 
@@ -300,10 +299,12 @@ main {
 
   .main-hero__btns {
     flex-direction: column;
+    align-items: center;
+    gap: 25px;
   }
 
   .advertisment {
-    padding: 80px 43px;
+    padding: 50px 40px;
   }
 
   .advertisment__list {
@@ -314,12 +315,33 @@ main {
     width: 100%;
   }
 
+  .statistics {
+    padding: 95px 40px;
+  }
+
   .statistics__list {
     flex-direction: column;
   }
 
+  .statistics__item {
+    width: 100%;
+  }
+
+  .advice {
+    padding: 95px 40px;
+  }
+
+  .advice__text {
+    text-align: center;
+  }
+
   .advice__list {
     flex-direction: column;
+    align-items: center;
+    margin-top: 75px;
+  }
+
+  .advice__item {
   }
 }
 
