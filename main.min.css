@@ -1,6 +1,14 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 
   text-decoration: none;
@@ -40,13 +48,19 @@ button {
 /* HAEDER STYLE START */
 
 .site-header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 121px;
   padding: 36px 0px;
 }
 
 .site-header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 21px;
 }
@@ -85,6 +99,8 @@ main {
 }
 
 .main-hero__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 10px;
   margin-top: 35px;
@@ -114,15 +130,24 @@ main {
 }
 
 .advertisment__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
 
 .advertisment__item {
   width: 329px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   gap: 14px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: start;
   padding: 35px 26px;
   background-color: rgba(255, 255, 255, 1);
@@ -177,14 +202,23 @@ main {
 
 .statistics__list {
   margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
 
 .statistics__item {
   width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 10px;
   padding: 31px 0px;
@@ -226,14 +260,23 @@ main {
 
 .advice__list {
   margin-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
 
 .advice__item {
   width: 232px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 30px;
   background-color: #fff;
@@ -281,6 +324,8 @@ main {
 }
 
 .trusted__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 120px;
   padding-top: 100px;
@@ -304,6 +349,8 @@ main {
 }
 
 .trusted-wrapper__adv {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 20px;
   margin-top: 30px;
@@ -331,8 +378,14 @@ main {
 }
 
 .partnership__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -343,7 +396,11 @@ main {
   max-width: 100%;
   width: 100%;
   background-color: rgba(22, 105, 122, 1);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 180px;
   padding: 30px 50px;
@@ -356,6 +413,8 @@ main {
 }
 
 .subscribe-input__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border-radius: 4px;
 }
@@ -401,6 +460,8 @@ main {
 
 .contact__list {
   padding: 80px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -429,6 +490,8 @@ main {
 
   .site-header__wrapper {
     position: relative;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
@@ -439,23 +502,38 @@ main {
   .site-header__nav {
     width: 50%;
     height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: end;
     position: fixed;
     padding: 30px 20px;
     top: 80px;
     right: 0;
     background-color: #fafafa;
+    -webkit-transform: translateX(207px);
+    -ms-transform: translateX(207px);
     transform: translateX(207px);
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
     transition: all ease 0.3s;
   }
 
   .hide {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
     transform: translateX(0);
   }
 
   .site-header__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     gap: 40px;
   }
@@ -465,6 +543,8 @@ main {
   }
 
   .site-header__media-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 24px;
   }
@@ -484,7 +564,12 @@ main {
   }
 
   .main-hero__btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 25px;
   }
@@ -494,6 +579,9 @@ main {
   }
 
   .advertisment__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -506,6 +594,9 @@ main {
   }
 
   .statistics__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -522,7 +613,12 @@ main {
   }
 
   .advice__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-top: 75px;
   }
@@ -536,6 +632,9 @@ main {
   }
 
   .trusted__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -545,6 +644,9 @@ main {
   }
 
   .partnership__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 60px;
   }
